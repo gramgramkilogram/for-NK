@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>web1 - html</title>
+  <meta charset='utf-8'>
+  <style>
+    body {
+      padding : 30px;
+      background-color:gray;
+      font-size : 30px;
+      text-align : center;
+      margin : 22px;
+    }
+    #months {
+      font-size : 50px;
+      font-weight : bold;
+    }
+    img {
+      padding : 30px;
+    }
+    #fact{
+      font-size : 20px;
+    }
+  </style>
+</head>
+
+<body><br><br>
+  세상에서 가장 아름다운 사람은 바로
+  <div id='months'>1월의 나경</div>입니다.<br><br><br>
+  <img src='1월 나경.jpg'>
+  <br><br>
+  <div id='fact'>남자는 대답을 듣고 이 사실을 오늘 말해주기로 하였습니다. ^^</div><br>
+  <script type="text/javascript">
+  function randomlinks(){
+      var myrandom=Math.floor(Math.random()*8)
+      var links=new Array()
+      links[0]="nk1.html"
+      links[1]="nk2.html"
+      links[2]="nk3.html"
+      links[3]="nk4.html"
+      links[4]="nk5.html"
+      links[5]="nk6.html"
+      links[6]="nk7.html"
+      links[7]="nk8.html"
+
+      window.location=links[myrandom]
+  }
+  </script>
+  <form id='the'>
+    <input type="button" value="다른 답변 보기" onClicK="randomlinks()">
+    <input type="button" value="처음부터 다시 보기" onClicK="location.href='for_NaKyung2.html'">
+  </form>
+</body>
+</html>
